@@ -2,7 +2,6 @@ import unittest
 
 from google_classroom_client import GoogleClassroomClient, GoogleResourceExhaustedError
 from test_utils import patch_google_api_http, patch_failed_api_http
-from secrets import ACCESS_TOKEN, REFRESH_TOKEN
 
 
 ############################
@@ -11,7 +10,7 @@ from secrets import ACCESS_TOKEN, REFRESH_TOKEN
 class GoogleClassroomClientTestCase(unittest.TestCase):
 
   def setUp(self):
-    self.client = GoogleClassroomClient(ACCESS_TOKEN, REFRESH_TOKEN)
+    self.client = GoogleClassroomClient('fake_token')
 
   @patch_google_api_http("data/discovery.json", "data/course_928586459_students.json")
   def test_students_list_by_course(self):

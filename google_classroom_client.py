@@ -10,7 +10,7 @@ FAILED_API_REQUEST_RETRIES = 3
 
 
 class GoogleClassroomClient:
-    def __init__(self, access_token, refresh_token):
+    def __init__(self, access_token, refresh_token=None):
         self.access_token = access_token
         self.refresh_token = refresh_token
         self.allow_refresh = False
