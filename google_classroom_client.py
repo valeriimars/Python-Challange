@@ -58,7 +58,7 @@ class GoogleClassroomClient:
             response = request.execute(
                 http=self.http, num_retries=FAILED_API_REQUEST_RETRIES
             )
-            return response
+            yield response
 
             request = resource.list_next(request, response)
             pages_fetched += 1
