@@ -1,0 +1,295 @@
+{
+    "courses": [
+        {
+            "id": "5122828515",
+            "name": "Jackie's Social Studies Class",
+            "section": "Section B",
+            "descriptionHeading": "Jackie's Social Studies Class Section B",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2017-09-05T17:48:40.489Z",
+            "updateTime": "2017-09-05T17:48:39.557Z",
+            "enrollmentCode": "1js1ue",
+            "courseState": "ACTIVE",
+            "alternateLink": "http://classroom.google.com/c/NTEyMjgyODUxNVpa",
+            "teacherGroupEmail": "Jackie_s_Social_Studies_Class_Section_B_teachers_c863e398@gedu-demo-newsela.com",
+            "courseGroupEmail": "Jackie_s_Social_Studies_Class_Section_B_d95cff77@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfjhRX2hKNldxREhrUUtIS0lFdVptVV9XOVBtNkJnNmNFT1haMlVDSHREc28",
+                "title": "Jackie's Social Studies Class Section B",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfjhRX2hKNldxREhrUUtIS0lFdVptVV9XOVBtNkJnNmNFT1haMlVDSHREc28"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom38399344@group.calendar.google.com"
+        },
+        {
+            "id": "1613444603",
+            "name": "Physics of the Force",
+            "section": "3B",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-07-19T21:13:03.087Z",
+            "updateTime": "2016-07-19T21:14:17.159Z",
+            "enrollmentCode": "qvmkdw",
+            "courseState": "ACTIVE",
+            "alternateLink": "http://classroom.google.com/c/MTYxMzQ0NDYwM1pa",
+            "teacherGroupEmail": "Physics_of_the_Force_3B_teachers_cdf81857@gedu-demo-newsela.com",
+            "courseGroupEmail": "Physics_of_the_Force_3B_4d228911@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-Yxfkw3QmoybWFtcTN1M1dJcmNLTjdnZmxPREpkQmdGdkVXWWJvaGxtZktsSDA",
+                "title": "Physics of the Force 3B",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-Yxfkw3QmoybWFtcTN1M1dJcmNLTjdnZmxPREpkQmdGdkVXWWJvaGxtZktsSDA"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroomb52f882a@group.calendar.google.com"
+        },
+        {
+            "id": "1078901361",
+            "name": "Test Class",
+            "section": "Test",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-22T14:24:49.889Z",
+            "updateTime": "2016-05-18T18:37:57.322Z",
+            "enrollmentCode": "550l24",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/MTA3ODkwMTM2MVpa",
+            "teacherGroupEmail": "Test_Class_Test_teachers_2874f4b9@gedu-demo-newsela.com",
+            "courseGroupEmail": "Test_Class_Test_9446ed03@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxflptR3M5cGw5Tk8wSC1PWWFfSVNuQ2FuU2dpSVU3d1o5c0x5SmlveDJLcEU",
+                "title": "Test Class Test",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxflptR3M5cGw5Tk8wSC1PWWFfSVNuQ2FuU2dpSVU3d1o5c0x5SmlveDJLcEU"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom60c6c04f@group.calendar.google.com"
+        },
+        {
+            "id": "947758152",
+            "name": "Jets",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:53:02.840Z",
+            "updateTime": "2016-03-07T17:00:54.461Z",
+            "enrollmentCode": "56yzd2",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3NzU4MTUy",
+            "teacherGroupEmail": "Jets_teachers_ce9e0cf0@gedu-demo-newsela.com",
+            "courseGroupEmail": "Jets_1438bc89@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfnZFME02SDdOYW5IYVc0TTBWWjFhZGY5REMzeG91SENMQ0RVWGE0Q2lDbW8",
+                "title": "Jets",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfnZFME02SDdOYW5IYVc0TTBWWjFhZGY5REMzeG91SENMQ0RVWGE0Q2lDbW8"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroomff1d8a3f@group.calendar.google.com"
+        },
+        {
+            "id": "947835455",
+            "name": "Fins",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:52:36.710Z",
+            "updateTime": "2016-03-10T18:07:12.862Z",
+            "enrollmentCode": "79h6ph1",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3ODM1NDU1",
+            "teacherGroupEmail": "Dolphins_teachers_c00518c7@gedu-demo-newsela.com",
+            "courseGroupEmail": "Dolphins_bb0f1221@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfnY4c0V4ckJydXpzUXJoQjZkZUdNM1dmYThzX3JxVTlYSG9CeEs1b054YjQ",
+                "title": "Dolphins",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfnY4c0V4ckJydXpzUXJoQjZkZUdNM1dmYThzX3JxVTlYSG9CeEs1b054YjQ"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom7e0203d8@group.calendar.google.com"
+        },
+        {
+            "id": "947831085",
+            "name": "Twisters",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:52:22.166Z",
+            "updateTime": "2016-03-17T21:17:39.393Z",
+            "enrollmentCode": "lb3trfi",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3ODMxMDg1",
+            "teacherGroupEmail": "Bills_teachers_4cd88cfc@gedu-demo-newsela.com",
+            "courseGroupEmail": "Bills_b7a38a3d@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfjVmaVNhd0E2Z3V6c2xrV1BSb2FFV3ByMzFvaDVVd0J1bnVtUW1NMC1ORFk",
+                "title": "Bills",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfjVmaVNhd0E2Z3V6c2xrV1BSb2FFV3ByMzFvaDVVd0J1bnVtUW1NMC1ORFk"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroomd32149a4@group.calendar.google.com"
+        },
+        {
+            "id": "947849794",
+            "name": "Dots",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:52:07.625Z",
+            "updateTime": "2016-03-17T21:17:35.618Z",
+            "enrollmentCode": "t77yg0q",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3ODQ5Nzk0",
+            "teacherGroupEmail": "Pats_teachers_44769c40@gedu-demo-newsela.com",
+            "courseGroupEmail": "Pats_adfe4d4d@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfnBlR0FTR2U3VXJsOU5tQkh0c2kwWTk4NEtUcXBVYUVnRDREZTJIZkVpN3M",
+                "title": "Pats",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfnBlR0FTR2U3VXJsOU5tQkh0c2kwWTk4NEtUcXBVYUVnRDREZTJIZkVpN3M"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom919ebfb2@group.calendar.google.com"
+        },
+        {
+            "id": "947854548",
+            "name": "Redskins",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:51:11.342Z",
+            "updateTime": "2016-03-07T16:53:06.288Z",
+            "enrollmentCode": "3orrj3e",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3ODU0NTQ4",
+            "teacherGroupEmail": "Washington_Football_Club_teachers_c7206ae1@gedu-demo-newsela.com",
+            "courseGroupEmail": "Washington_Football_Club_11d173c5@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfkZYTVVqRkJaeldrR05SNjN4MENlOUVvbnJ6ZUdmbWdGcXU1clVmYW9XOTA",
+                "title": "Washington Football Club",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfkZYTVVqRkJaeldrR05SNjN4MENlOUVvbnJ6ZUdmbWdGcXU1clVmYW9XOTA"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroomfcdb3038@group.calendar.google.com"
+        },
+        {
+            "id": "947767981",
+            "name": "Cowboys",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:50:50.609Z",
+            "updateTime": "2016-03-10T18:07:51.347Z",
+            "enrollmentCode": "96jcolp",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3NzY3OTgx",
+            "teacherGroupEmail": "Cowboys_teachers_a9cd479e@gedu-demo-newsela.com",
+            "courseGroupEmail": "Cowboys_27c7bd9b@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfnJLcXlKM1FZWUFxVXphV0hsYUd5UEdfRVZhTEo2a0xzbll0Q1B0eEVLMmc",
+                "title": "Cowboys",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfnJLcXlKM1FZWUFxVXphV0hsYUd5UEdfRVZhTEo2a0xzbll0Q1B0eEVLMmc"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom3e7d3a65@group.calendar.google.com"
+        },
+        {
+            "id": "947865295",
+            "name": "History of Stormtroopers",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:50:38.480Z",
+            "updateTime": "2017-06-17T21:48:47.177Z",
+            "enrollmentCode": "pw9h4p",
+            "courseState": "ACTIVE",
+            "alternateLink": "http://classroom.google.com/c/OTQ3ODY1Mjk1",
+            "teacherGroupEmail": "Giants_teachers_9d1aa5ec@gedu-demo-newsela.com",
+            "courseGroupEmail": "Giants_c6994732@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfkdKN2JmVTVBb0I4aXlFMXVudmRSRFJsZVFmUGtWNzMxcTAwTXJ1SllsQ1U",
+                "title": "Giants",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfkdKN2JmVTVBb0I4aXlFMXVudmRSRFJsZVFmUGtWNzMxcTAwTXJ1SllsQ1U"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom6c6f9015@group.calendar.google.com"
+        },
+        {
+            "id": "947801370",
+            "name": "Dark Side Literature",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T23:50:25.247Z",
+            "updateTime": "2017-06-18T18:57:26.384Z",
+            "enrollmentCode": "1gyf44q",
+            "courseState": "ACTIVE",
+            "alternateLink": "http://classroom.google.com/c/OTQ3ODAxMzcw",
+            "teacherGroupEmail": "Eagles_teachers_4a7002f7@gedu-demo-newsela.com",
+            "courseGroupEmail": "Eagles_22c0c560@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfjNwWnZGdEE3dFZmOU4wZWc3OFFna252VUtjZ3ducU8zSmY2cTZqRk52ODA",
+                "title": "Eagles",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfjNwWnZGdEE3dFZmOU4wZWc3OFFna252VUtjZ3ducU8zSmY2cTZqRk52ODA"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom15ddb338@group.calendar.google.com"
+        },
+        {
+            "id": "947348804",
+            "name": "Wizards renamed",
+            "section": "Shire",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-03-03T20:09:47.837Z",
+            "updateTime": "2016-03-03T23:46:09.080Z",
+            "enrollmentCode": "zjj69y6",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTQ3MzQ4ODA0",
+            "teacherGroupEmail": "Hobbits_Shire_teachers_cc463218@gedu-demo-newsela.com",
+            "courseGroupEmail": "Hobbits_Shire_6b776748@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfjlEUUM4SDJoNmdkNjY1YkFNMDIyc3lxMHF6bkFkRHF6ZFVyVm5mZ0d0dDg",
+                "title": "Hobbits Shire",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfjlEUUM4SDJoNmdkNjY1YkFNMDIyc3lxMHF6bkFkRHF6ZFVyVm5mZ0d0dDg"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom662db411@group.calendar.google.com"
+        },
+        {
+            "id": "928566180",
+            "name": "Jedi Mind Tricks 101",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-02-24T19:57:14.044Z",
+            "updateTime": "2016-03-17T21:15:51.099Z",
+            "enrollmentCode": "cab94c2",
+            "courseState": "ACTIVE",
+            "alternateLink": "http://classroom.google.com/c/OTI4NTY2MTgw",
+            "teacherGroupEmail": "Cookies_301_teachers_2f0ffde8@gedu-demo-newsela.com",
+            "courseGroupEmail": "Cookies_301_8b883b9d@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfkdUQ3VwaWFyQVlqZXJQbm8xUjBPaHpHbTJsQi1vRXV5bmxoMmctdDV1czg",
+                "title": "Cookies 301",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfkdUQ3VwaWFyQVlqZXJQbm8xUjBPaHpHbTJsQi1vRXV5bmxoMmctdDV1czg"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom5c7f706f@group.calendar.google.com"
+        },
+        {
+            "id": "928586459",
+            "name": "Wookie Art",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-02-24T19:56:45.230Z",
+            "updateTime": "2016-03-17T21:17:25.729Z",
+            "enrollmentCode": "emia8ky",
+            "courseState": "ACTIVE",
+            "alternateLink": "http://classroom.google.com/c/OTI4NTg2NDU5",
+            "teacherGroupEmail": "Wookies_201_teachers_61e20507@gedu-demo-newsela.com",
+            "courseGroupEmail": "Wookies_201_3c38a413@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfkNwNmk0bE1ZNDJuVUpnX3g4RlgteUlWY1RaSmpFQ19HaFM3YU9JY1EzWDQ",
+                "title": "Wookies 201",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfkNwNmk0bE1ZNDJuVUpnX3g4RlgteUlWY1RaSmpFQ19HaFM3YU9JY1EzWDQ"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom054b367b@group.calendar.google.com"
+        },
+        {
+            "id": "928553078",
+            "name": "Wookies Renamed",
+            "section": "Kashyyk",
+            "ownerId": "117716747525957823124",
+            "creationTime": "2016-02-24T19:52:01.407Z",
+            "updateTime": "2016-02-24T23:40:42.321Z",
+            "enrollmentCode": "we328n",
+            "courseState": "ARCHIVED",
+            "alternateLink": "http://classroom.google.com/c/OTI4NTUzMDc4",
+            "teacherGroupEmail": "Wookies_101_Kashyyk_teachers_fb2cb4a9@gedu-demo-newsela.com",
+            "courseGroupEmail": "Wookies_101_Kashyyk_e69968d8@gedu-demo-newsela.com",
+            "teacherFolder": {
+                "id": "0B5cJ9eebb-YxfkxnbVo3ZUF0NG52cXQ5cW1xOEkwY0NObVZzNHZ5MldaZ1hIenJIcW1HM1k",
+                "title": "Wookies 101 Kashyyk",
+                "alternateLink": "https://drive.google.com/drive/folders/0B5cJ9eebb-YxfkxnbVo3ZUF0NG52cXQ5cW1xOEkwY0NObVZzNHZ5MldaZ1hIenJIcW1HM1k"
+            },
+            "guardiansEnabled": false,
+            "calendarId": "gedu-demo-newsela.com_classroom12696e5b@group.calendar.google.com"
+        }
+    ]
+}

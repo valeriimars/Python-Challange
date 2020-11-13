@@ -1,0 +1,56 @@
+{
+    "students": [
+        {
+            "courseId": "928586459",
+            "userId": "116285072278462904826",
+            "profile": {
+                "id": "116285072278462904826",
+                "name": {
+                    "givenName": "Hiro",
+                    "familyName": "Protagonist",
+                    "fullName": "Hiro Protagonist"
+                },
+                "emailAddress": "test-student-5@gedu-demo-newsela.com"
+            }
+        },
+        {
+            "courseId": "928586459",
+            "userId": "114969151011411136200",
+            "profile": {
+                "id": "114969151011411136200",
+                "name": {
+                    "givenName": "Geralt",
+                    "familyName": "Rivia",
+                    "fullName": "Geralt Rivia"
+                },
+                "emailAddress": "test-student-3@gedu-demo-newsela.com"
+            }
+        },
+        {
+            "courseId": "928586459",
+            "userId": "108381332900156813005",
+            "profile": {
+                "id": "108381332900156813005",
+                "name": {
+                    "givenName": "Dorothy",
+                    "familyName": "Oz",
+                    "fullName": "Dorothy Oz"
+                },
+                "emailAddress": "test-student-2@gedu-demo-newsela.com"
+            }
+        },
+        {
+            "courseId": "928586459",
+            "userId": "109703525950537148333",
+            "profile": {
+                "id": "109703525950537148333",
+                "name": {
+                    "givenName": "Haley",
+                    "familyName": "Mann",
+                    "fullName": "Haley Mann"
+                },
+                "emailAddress": "test-student-1@gedu-demo-newsela.com"
+            }
+        }
+    ]
+}

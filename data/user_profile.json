@@ -1,0 +1,11 @@
+{
+    "id": "111000000000000000001",
+    "name": {
+        "givenName": "Chidi",
+        "familyName": "Anagonye",
+        "fullName": "Chidi Anagonye"
+    },
+    "emailAddress": "canagonye@newsela.com",
+    "photoUrl": "",
+    "verifiedTeacher": true
+}
