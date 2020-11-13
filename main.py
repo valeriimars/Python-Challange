@@ -26,6 +26,11 @@ class GoogleClassroomClientTestCase(unittest.TestCase):
     all_active = all(classroom['courseState'] == 'ACTIVE' for classroom in classrooms)
     self.assertTrue(all_active)
 
+  @patch_failed_api_http('data/throttled_error.json', 429)
+  def test_google_classroom_resource_exhausted_exception_raised(self):
+      with self.assertRaises(GoogleResourceExhaustedError):
+          self.client.get_courses()
+
   @patch_google_api_http("data/discovery.json", "data/courses.json")
   def test_fetch_active_and_archived_classrooms(self):
     all_classrooms = self.client.get_courses(hide_archived=False)
@@ -34,11 +39,6 @@ class GoogleClassroomClientTestCase(unittest.TestCase):
     
     self.assertTrue(len(archived) > 1)
     self.assertTrue(len(active) > 1)
-
-  @patch_failed_api_http('data/throttled_error.json', 429)
-  def test_google_classroom_resource_exhausted_exception_raised(self):
-      with self.assertRaises(GoogleResourceExhaustedError):
-          self.client.get_courses()
   
 
 # Run all the tests.

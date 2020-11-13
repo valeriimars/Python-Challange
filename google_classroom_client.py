@@ -36,45 +36,21 @@ class GoogleClassroomClient:
         @wraps(api_calling_function)
         def wrapper(self, *args, **kwargs):
             try:
-                try:
-                    return api_calling_function(self, *args, **kwargs)
-                except AccessTokenCredentialsError:
-                    # Cannot refresh the token
-                    raise
-                    #self.credentials.refresh()
+                return api_calling_function(self, *args, **kwargs)
             except AccessTokenCredentialsError as e:
                 raise GoogleClassroomClientError(
                     "The user has an access token, but it's not valid.", full=str(e)
                 )
             except googleapiclient.errors.HttpError as ex:
-                # This feels brittle, but there's no better way to
-                # differentiate between a scoping issue and an error returned
-                # because the user doesn't actually use Google Classroom.
-                content = ex.content.decode()
-                if "insufficient authentication scopes" in content:
-                    raise GoogleClassroomClientError(
-                        "Insufficient authentication scopes.", full=content
-                    )
-                elif "@NotGoogleAppsUser" in content:
-                    raise GoogleClassroomNotInstalledError(
-                        "User is not linked to Google Apps for Education.", full=content
-                    )
-                elif "@ClassroomDisabled" in content:
-                    # ClassroomDisabled indicates that the requesting user
-                    # does not have access to Classroom.
-                    raise GoogleClassroomDisabledError(
-                        "Google Classroom is disabled.", full=content
-                    )
-                elif "@ClassroomApiDisabled" in content:
-                    # ClassroomApiDisabled indicates that the requesting user
-                    # does not have access to the Classroom API.
-                    raise GoogleClassroomApiDisabledError(
-                        "Google Classroom API is disabled.", full=content
-                    )
-                elif ex.resp.status == 429:
+                if ex.resp.status == 429:
                     # RESOURCE_EXHAUSTED error is returned when Google throttles
                     # requests.
+                    # OK:
                     raise GoogleResourceExhaustedError("Too many requests.")
+
+                    # ERROR: Keep an eye on exception type
+                    # raise Exception("Too many requests.")
+                    # End
                 else:
                     raise
 
@@ -88,12 +64,17 @@ class GoogleClassroomClient:
             response = request.execute(
                 http=self.http, num_retries=FAILED_API_REQUEST_RETRIES
             )
+            # OK:
             yield response
+            
+            # ERROR: Yield instead of return. Hard to diagnose.
+            # return response
+            # End
+
             request = resource.list_next(request, response)
             pages_fetched += 1
             if pages_fetched > 100:
-                # 100 pages is plenty. If we ever have to fetch more than
-                # that, it's worth investigating why.
+                # 100 pages is plenty.
                 raise GoogleClassroomClientError("Result set is over 100 pages.")
 
     @_handle_api_errors
@@ -105,7 +86,12 @@ class GoogleClassroomClient:
         ]
         return data
 
+    # OK:
     @_handle_api_errors
+
+    # ERROR: Decorator use
+    # @_handle_api_errors()
+    # End
     def get_object_response(self, resource, request_args):
         request = resource.get(**request_args)
         data = request.execute(http=self.http, num_retries=FAILED_API_REQUEST_RETRIES)
@@ -117,7 +103,13 @@ class GoogleClassroomClient:
             request_args={'teacherId': 'me'},
             unwrap='courses',
         )
+        # OK:
         if hide_archived:
+
+        # ERROR: boolean value
+        # if not hide_archived:
+        # End
+
             courses = [c for c in courses if c['courseState'] == 'ACTIVE']
         return courses
 
@@ -133,6 +125,13 @@ class GoogleClassroomClient:
             request_args={'courseId': course_id},
             unwrap='students',
         )
+        # OK:
+        students = [student for student in students if str(student['courseId']) == str(course_id)]
+        
+        # ERROR: Int vs Str comparison should be cohersed.
+        # students = [student for student in students if student['courseId'] == course_id]
+        # End
+        
         return students
 
     def get_user_profile(self):
@@ -149,27 +148,6 @@ class GoogleClassroomClientError(Exception):
         super().__init__(message)
         self.full_details = full
 
-
-class GoogleClassroomNotInstalledError(GoogleClassroomClientError):
-    """User is not configured to use Google Classroom."""
-
-    pass
-
-
-class GoogleClassroomDisabledError(GoogleClassroomClientError):
-    """
-    User does not have access to Google Classroom.
-    """
-
-    pass
-
-
-class GoogleClassroomApiDisabledError(GoogleClassroomClientError):
-    """
-    User does not have access to the Google Classroom API.
-    """
-
-    pass
 
 
 class GoogleResourceExhaustedError(GoogleClassroomClientError):
