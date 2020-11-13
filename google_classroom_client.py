@@ -42,8 +42,7 @@ class GoogleClassroomClient:
                 )
             except googleapiclient.errors.HttpError as ex:
                 if ex.resp.status == 429:
-                    # RESOURCE_EXHAUSTED error is returned when Google throttles
-                    # requests.
+                    # status 429 indicates that Google throttles requests.
                     raise Exception("Too many requests.")
                 else:
                     raise
