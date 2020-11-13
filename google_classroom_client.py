@@ -13,7 +13,6 @@ class GoogleClassroomClient:
     def __init__(self, access_token, refresh_token=None):
         self.access_token = access_token
         self.refresh_token = refresh_token
-        self.allow_refresh = False
 
     @property
     def http(self):
@@ -99,7 +98,11 @@ class GoogleClassroomClient:
 
     def get_courses(self, hide_archived=False):
         courses = self.get_list_response(
+            # OK: 
             resource=self.service.courses(),
+            # ERROR: Property vs Function
+            # resource=self.service().courses(),
+            # End
             request_args={'teacherId': 'me'},
             unwrap='courses',
         )
@@ -128,7 +131,7 @@ class GoogleClassroomClient:
         # OK:
         students = [student for student in students if str(student['courseId']) == str(course_id)]
         
-        # ERROR: Int vs Str comparison should be cohersed.
+        # ERROR: Int vs Str comparison must be be cohersed.
         # students = [student for student in students if student['courseId'] == course_id]
         # End
         
