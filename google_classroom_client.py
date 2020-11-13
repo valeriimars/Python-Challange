@@ -44,12 +44,7 @@ class GoogleClassroomClient:
                 if ex.resp.status == 429:
                     # RESOURCE_EXHAUSTED error is returned when Google throttles
                     # requests.
-                    # OK:
-                    raise GoogleResourceExhaustedError("Too many requests.")
-
-                    # ERROR: Keep an eye on exception type
-                    # raise Exception("Too many requests.")
-                    # End
+                    raise Exception("Too many requests.")
                 else:
                     raise
 
@@ -63,12 +58,7 @@ class GoogleClassroomClient:
             response = request.execute(
                 http=self.http, num_retries=FAILED_API_REQUEST_RETRIES
             )
-            # OK:
-            yield response
-            
-            # ERROR: Yield instead of return. Hard to diagnose.
-            # return response
-            # End
+            return response
 
             request = resource.list_next(request, response)
             pages_fetched += 1
@@ -85,12 +75,7 @@ class GoogleClassroomClient:
         ]
         return data
 
-    # OK:
-    @_handle_api_errors
-
-    # ERROR: Decorator use
-    # @_handle_api_errors()
-    # End
+    @_handle_api_errors()
     def get_object_response(self, resource, request_args):
         request = resource.get(**request_args)
         data = request.execute(http=self.http, num_retries=FAILED_API_REQUEST_RETRIES)
@@ -98,21 +83,11 @@ class GoogleClassroomClient:
 
     def get_courses(self, hide_archived=False):
         courses = self.get_list_response(
-            # OK: 
-            resource=self.service.courses(),
-            # ERROR: Property vs Function
-            # resource=self.service().courses(),
-            # End
+            resource=self.service().courses(),
             request_args={'teacherId': 'me'},
             unwrap='courses',
         )
-        # OK:
         if hide_archived:
-
-        # ERROR: boolean value
-        # if not hide_archived:
-        # End
-
             courses = [c for c in courses if c['courseState'] == 'ACTIVE']
         return courses
 
@@ -128,13 +103,7 @@ class GoogleClassroomClient:
             request_args={'courseId': course_id},
             unwrap='students',
         )
-        # OK:
-        students = [student for student in students if str(student['courseId']) == str(course_id)]
-        
-        # ERROR: Int vs Str comparison must be be cohersed.
-        # students = [student for student in students if student['courseId'] == course_id]
-        # End
-        
+        students = [student for student in students if student['courseId'] == course_id]
         return students
 
     def get_user_profile(self):
